@@ -1,0 +1,20 @@
+<h1>Users</h1>
+<ul>
+<% @users.each do |u| %>
+  <li><%= "#{u.name}, #{u.email}" %></li>
+<% end %>
+</ul>
+
+<h1>Cats</h1>
+<ul>
+<% @cats.each do |c| %>
+  <li><%= "#{c.name}" %></li>
+<% end %>
+</ul>
+
+<h1>Todos</h1>
+<ul>
+<% @todos.each do |t| %>
+  <li><%= "#{t.tasks}, #{t.finished}" %></li>
+<% end %>
+</ul>
